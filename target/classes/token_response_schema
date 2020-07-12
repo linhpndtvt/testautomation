@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "errorMsg": {
+      "type": "null",
+      "exclusiveMinimum": "null"
+      },
+    "code": {
+      "type": "integer"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "total": {
+      "type": "null"
+    },
+    "authenticated": {
+      "type": "boolean"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "token": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "errorMsg",
+    "code",
+    "success",
+    "total",
+    "authenticated",
+    "userId",
+    "token"
+  ]
+}

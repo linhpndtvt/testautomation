@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "datas": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "projectId": {
+              "type": "string"
+            },
+            "projectName": {
+              "type": "string"
+            },
+            "status": {
+              "type": "integer"
+            },
+            "period": {
+              "type": "integer"
+            },
+            "startTime": {
+              "type": "integer"
+            },
+            "userId": {
+              "type": "string"
+            },
+            "userName": {
+              "type": "string"
+            },
+            "roleId": {
+              "type": "string"
+            },
+            "roleName": {
+              "type": "string"
+            },
+            "totalQuota": {
+              "type": "number"
+            },
+            "userIdMapping": {
+              "type": "integer"
+            },
+            "regionId": {
+              "type": "string"
+            },
+            "regionName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "projectId",
+            "projectName",
+            "status",
+            "period",
+            "startTime",
+            "userId",
+            "userName",
+            "roleId",
+            "roleName",
+            "totalQuota",
+            "userIdMapping",
+            "regionId",
+            "regionName"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "success",
+    "datas"
+  ]
+}

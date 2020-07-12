@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "integer"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "userIdMapping": {
+          "type": "integer"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "regionId": {
+          "type": "string"
+        },
+        "regionName": {
+          "type": "string"
+        },
+        "storageEndPointUrl": {
+          "type": "string"
+        },
+        "s3StorageURl": {
+          "type": "string"
+        },
+        "authEndPointUrl": {
+          "type": "string"
+        },
+        "publicAuthEndPointUrl": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer"
+        },
+        "statusName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "userId",
+        "userIdMapping",
+        "userName",
+        "password",
+        "regionId",
+        "regionName",
+        "storageEndPointUrl",
+        "s3StorageURl",
+        "authEndPointUrl",
+        "publicAuthEndPointUrl",
+        "status",
+        "statusName"
+      ]
+    }
+  },
+  "required": [
+    "code",
+    "success",
+    "data"
+  ]
+}
